@@ -5,7 +5,9 @@ body {
     background: radial-gradient(#2d4b7a,#4b8fa5);
 }
 
-.container {
+.basket {
+    width: 450px;
+    height: 250px;
     padding: 20px;
     background-color: #75b8c4;
     /* background: linear-gradient(to right, #4b8fa5, #2d4b7a); */
