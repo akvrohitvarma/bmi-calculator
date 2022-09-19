@@ -3,6 +3,8 @@
   <img src="https://cdn-icons-png.flaticon.com/128/2117/2117130.png"/>
 </p>
 
+[![creator](https://img.shields.io/badge/made%20by-Rohit%20Varma-blue?style=for-the-badge&logo=appveyor)](https://www.akvrv.com)
+
 
 # BMI Calculator
 
