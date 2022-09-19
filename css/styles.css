@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background: radial-gradient(#2d4b7a,#4b8fa5);
+}
+
+.container {
+    padding: 20px;
+    background-color: #75b8c4;
+    /* background: linear-gradient(to right, #4b8fa5, #2d4b7a); */
+    border-radius: 50px;
+}
+
+.prompt {
+    font-size: 40px;
+}
+
+.title {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#output {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+}
