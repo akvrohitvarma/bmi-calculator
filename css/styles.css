@@ -1,17 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    background: radial-gradient(#2d4b7a,#4b8fa5);
+    height: 100vh;
+    background-image: radial-gradient(#2d4b7a,#4b8fa5);
+    /* background-image: url('/background.jpg'); */
+    background-size: cover;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+}
+
+.copyright {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 15px;
+    font-size: 14px;
+    font-family:'Poppins',sans-serif;
+    color: azure;
+    text-shadow: 2px 2px black;
 }
 
 .basket {
     width: 450px;
-    height: 250px;
+    height: 280px;
     padding: 20px;
     background-color: #75b8c4;
     /* background: linear-gradient(to right, #4b8fa5, #2d4b7a); */
     border-radius: 50px;
+    box-shadow: 5px 5px 19px darkslategray;
+    transition-duration: 500ms;
+}
+
+.basket:hover {
+    width: 650px;
+    height: 360px;
 }
 
 .prompt {
@@ -20,10 +48,37 @@ body {
 
 .title {
     font-family: 'Fjalla One', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    color: aliceblue;
+    text-shadow: 3px 3px black;
 }
 
 #output {
     font-size: 30px;
     font-weight: 800;
     font-family: 'Quicksand', sans-serif;
+}
+
+.output {
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    background-color: #2d4b7a;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    color:aliceblue;
+    text-shadow: 2px 2px black;
+}
+
+.span {
+    font-size: 14px;
+    margin: 0%;
+    padding: 0%;
 }

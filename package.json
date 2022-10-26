@@ -1,0 +1,25 @@
+{
+  "name": "bmi-webapp",
+  "version": "1.0.0",
+  "description": "A simple BMI calculator and Health tracker written in Vanilla Javascript, HTML5 and CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akvrohitvarma/bmi-calculator.git"
+  },
+  "keywords": [],
+  "author": "AKV Rohit Varma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akvrohitvarma/bmi-calculator/issues"
+  },
+  "homepage": "https://github.com/akvrohitvarma/bmi-calculator#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "particles.js": "^2.0.0"
+  }
+}

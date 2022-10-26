@@ -5,30 +5,29 @@ function calculateBMI() {
 
     let bmi = (weight / ((height * height) / 10000)).toPrecision(4);
 
-    if (bmi <= 18.5) {
-        message = "You are under weight!";
-        const output = document.querySelector('#output');
-        output.style.color = '#EEED09';
-    }
-    else if (bmi > 18.5 && bmi <= 24.9) {
-        message = "You have a healthy weight!";
-        const output = document.querySelector('#output');
-        output.style.color = '#138808';
-    }
-    else if (bmi > 24.9 && bmi <= 29.9) {
-        message =  "You are over weight!";
-        const output = document.querySelector('#output');
-        output.style.color = '#692B57';
-    }
-    else if (bmi > 29.9) {
-        message = "You are Obese!";
-        const output = document.querySelector('#output');
-        output.style.color = '#BA4E00';
+    if (height <= 250 || weight <= 150) {
+        if (bmi <= 18.5) {
+            message = "Under weight!";
+        }
+        else if (bmi > 18.5 && bmi <= 24.9) {
+            message = "Healthy!";
+        }
+        else if (bmi > 24.9 && bmi <= 29.9) {
+            message =  "Over weight!";
+        }
+        else if (bmi > 29.9) {
+            message = "Obese!";
+        }
+        else {
+            message = "Ivalid input!";
+            bmi = "0.00";
+        }
     }
     else {
-        message = "Please enter a valid input!";
-        const output = document.querySelector('#output');
-        output.style.color = '#C21807';
+        message = "Invalid Measurements";
+        bmi = "0.00";
     }
-    document.getElementById("output").innerHTML = message;
+    console.log(message,bmi);
+    document.getElementById("output-bmi").innerHTML = bmi;
+    document.getElementById("output-status").innerHTML = message;
 }
